@@ -1,0 +1,44 @@
+Assignment 3: JavaScript Functions
+
+Objective:
+
+Practice creating and using JavaScript functions to perform various tasks.
+
+Instructions:
+
+Write JavaScript code to create functions that perform the following tasks:
+
+1. Greeting Function: Create a function greet(name) that takes a name as an argument and returns a personalized greeting message.
+2. Calculator Function: Create a function calculateSum(a, b) that takes two numbers as arguments and returns their sum.
+3. Even or Odd Function: Create a function isEven(num) that takes a number as an argument and returns true if the number is even, and false otherwise.
+4. String Repeater Function: Create a function repeatString(str, n) that takes a string and a number as arguments, and returns the string repeated n times.
+5. Temperature Converter Function: Create a function convertCelsiusToFahrenheit(celsius) that takes a temperature in Celsius as an argument and returns the equivalent temperature in Fahrenheit.
+6. Age Calculator Function: Create a function calculateAge(birthYear) that takes a birth year as an argument and returns the person's age.
+7. Random Number Generator Function: Create a function generateRandomNumber(min, max) that takes two numbers as arguments and returns a random number between min and max.
+8. String Length Function: Create a function getStringLength(str) that takes a string as an argument and returns its length.
+9. Array Sum Function: Create a function calculateArraySum(arr) that takes an array of numbers as an argument and returns their sum.
+10. Vowel Counter Function: Create a function countVowels(str) that takes a string as an argument and returns the number of vowels in the string.
+
+Requirements:
+
+- Use function declarations (e.g., function greet(name) { ... })
+- Use return statements to output the results
+- Test each function with sample inputs
+
+Deliverables:
+
+- A single JavaScript file containing all the functions
+- Test each function with sample inputs and log the results to the console
+
+Grading criteria:
+
+- Correctness and functionality of each function
+- Code organization and readability
+- Use of proper syntax and semantics
+
+Tips:
+
+- Use online resources such as MDN Web Docs or W3Schools for reference.
+- Test your code thoroughly to ensure it works as expected.
+
+I hope this updated assignment helps your students practice a variety of JavaScript functions!

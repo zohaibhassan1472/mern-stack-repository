@@ -32,3 +32,23 @@ function isEven() {
 }
 document.getElementById("identify").addEventListener("click", isEven);
 
+// String Repeater Function: Create a function repeatString(str, n)
+//  that takes a string and a number as arguments, and returns the string repeated n times.
+
+function repeatString() {
+    let user_string = document.getElementById("string").value;
+    let user_num = +document.getElementById("num").value;
+    let show_repeater=document.getElementById("repeats");
+    show_repeater.innerHTML = "";
+   
+    
+    for(let i=1; i<=user_num; i++ ){
+        show_repeater.append(`${i}:   ${user_string} `);
+
+    };
+}
+document.getElementById("repeater").addEventListener("click", repeatString);
+
+
+// Temperature Converter Function: Create a function convertCelsiusToFahrenheit(celsius) 
+// that takes a temperature in Celsius as an argument and returns the equivalent temperature in Fahrenheit.

@@ -107,8 +107,6 @@ document.getElementById("counter").addEventListener("click", function () {
 // that takes an array of numbers as an argument and returns their sum.
 
 let get_user_number = document.getElementById("user_numbers");
-
-
 get_user_number.addEventListener("keydown", function (e) {
     if (
         e.key === "Backspace" ||
@@ -134,14 +132,39 @@ document.getElementById("sum_user_numers").addEventListener("click", function ()
     let get_user_all_numbers = document.getElementById("user_numbers").value;
     let conv_str_int = get_user_all_numbers.split(" ");
     console.log(conv_str_int)
-    let sum =0;
+    let sum = 0;
     for (let i = 0; i < conv_str_int.length; i++) {
-        sum=sum+parseInt(conv_str_int[i])
-        
+        let num = parseInt(conv_str_int[i]);
+        if (!isNaN(num)) {
+            sum += num;
+        }
+
+
     }
-    document.getElementById("show_sum_number").innerHTML=sum;
+    document.getElementById("show_sum_number").innerHTML = sum;
 })
 
 
 // Vowel Counter Function: Create a function countVowels(str) that takes a string as an argument 
 // and returns the number of vowels in the string.
+
+function countVowels() {
+    let get_user_string = document.getElementById("user_strings").value;
+    // Create vowels array
+    let aeiou_AEIOU = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
+    // Convert string to array
+    let cons_To_Array = get_user_string.split("");
+    let count = 0;
+    for (let i = 0; i < cons_To_Array.length; i++) {
+        for (let j = 0; j < aeiou_AEIOU.length; j++) {
+            if (cons_To_Array[i] === aeiou_AEIOU[j]) {
+                count++;
+                break;
+            }
+        }
+    }
+    return count;
+}
+document.getElementById("count_vowels").addEventListener("click", function () {
+    document.getElementById("show_count_vowels").innerHTML = countVowels();
+})

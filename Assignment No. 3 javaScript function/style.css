@@ -1,0 +1,82 @@
+/* Dark Mode Theme */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Grid layout for all cards */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+/* Individual cards */
+div[class^="question_"] {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+div[class^="question_"]:hover {
+    transform: translateY(-3px);
+}
+
+h1 {
+    color: #4dd0e1;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #222;
+    color: #f5f5f5;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+p {
+    font-weight: bold;
+    color: #80cbc4;
+    margin-top: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+}

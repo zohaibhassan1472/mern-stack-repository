@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 
 <body>
+    <div class="container">
     <div class="question_1">
-        <h1>Greeting</h1>
-        <label for="">Name :</label>
+        <h1>1. Greeting</h1>
         <input type="text" id="question_first" placeholder="Please Enter Your Name">
         <br>
         <button id="press_greeting">Press to see Message</button>
@@ -18,17 +20,17 @@
     </div>
 
     <div class="question_2">
-        <h1>Add two Numbers</h1>
-        <input id="num_1" type="number">
+        <h1>2. Add two Numbers</h1>
+        <input id="num_1" type="number" placeholder="Enter Number 1">
         <br>
-        <input id="num_2" type="number"><br>
+        <input id="num_2" type="number" placeholder="Enter Number 2"><br>
         <button id="sum">Sum</button>
         <p id="sum_result"></p>
     </div>
 
     <div class="question_3">
-        <h1>Even Odd Identifier</h1>
-        <input id="even_odd" type="number">
+        <h1>3. Even Odd Identifier</h1>
+        <input id="even_odd" type="number" placeholder="Enter Number">
         <br>
         <button id="identify">Check</button>
         <p id="even_odd_result"></p>
@@ -36,17 +38,17 @@
     </div>
 
     <div class="question_4">
-        <h1>String Reprater</h1>
-        <input id="string" type="text">
+        <h1>4. String Reprater</h1>
+        <input id="string" type="text" placeholder="Enter String">
         <br>
-        <input id="num" type="number"><br>
+        <input id="num" type="number" placeholder="How many times to repeat"><br>
         <button id="repeater">Press to Repeat</button>
         <p id="repeats"></p>
     </div>
 
     <div class="question_5">
-        <h1>Temperature Converter Function</h1>
-        <input id="celsius" type="number">
+        <h1>5.Temperature Fahrenheit Converter</h1>
+        <input id="celsius" type="number" placeholder="Enter Temperature in Celsius">
         <br>
         <button id="convert">Convert to Fahrenheit</button>
         <p id="fahrenheit"></p>
@@ -54,8 +56,8 @@
     </div>
 
     <div class="question_6">
-        <h1>Age Calculator</h1>
-        <input id="current_age" type="number">
+        <h1>6. Age Calculator</h1>
+        <input id="current_age" type="number" placeholder="Enter Birth Year" >
         <br>
         <button id="calculate">Calculate</button>
         <p id="your_age"></p>
@@ -63,17 +65,17 @@
     </div>
 
     <div class="question_7">
-        <h1>Generator Random Number</h1>
-        <input id="min_num" type="number">
+        <h1>7. Generator Random Number</h1>
+        <input id="min_num" type="number" placeholder="Enter Min Num">
         <br>
-        <input id="max_num" type="number"><br>
+        <input id="max_num" type="number" placeholder="Enter Max Num"><br>
         <button id="generate_random">Press Random</button>
         <p id="random_num_generated"></p>
     </div>
 
     <div class="question_8">
-        <h1>String Length</h1>
-        <input id="user_string" type="text">
+        <h1>8. String Length</h1>
+        <input id="user_string" type="text" placeholder="Type String...">
         <br>
         <button id="counter">Count Length</button>
         <p id="show_lenght"></p>
@@ -82,23 +84,24 @@
 
 
     <div class="question_9">
-        <h1>Sum of Array Numbers</h1>
-        <input id="user_numbers" type="text">
+        <h1>9. Sum of Array Numbers</h1>
+        <input id="user_numbers" type="text" placeholder="Enter Numbers to Sum">
         <br>
         <button id="sum_user_numers">Press to Sum</button>
         <p id="show_sum_number"></p>
     </div>
 
-    <div class="question_9">
-        <h1>Vowel Counter</h1>
-        <input id="user_strings" type="text">
+    <div class="question_10">
+        <h1>10.Vowel Counter</h1>
+        <input id="user_strings" type="text"placeholder="Type String to count Vowels...">
         <br>
-        <button id="count_vowels ">Count Vowels</button>
+        <button id="count_vowels">Count Vowels</button>
         <p id="show_count_vowels"></p>
     </div>
 
 
     <script src="functions.js"></script>
+    </div>
 </body>
 
 </html>

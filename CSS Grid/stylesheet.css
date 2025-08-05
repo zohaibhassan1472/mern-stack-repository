@@ -1,54 +1,78 @@
-.container{
-    width: 100%;
-    background-color: blanchedalmond;
-      display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-columns: 50% repeat(3, 1fr) 2fr; */
-    gap: 1rem;
-    padding: 1rem;
-    
+body {
+    background-color: rgb(196, 227, 254);
 }
-.items{
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.445);
+    display: grid;
+    /* grid-template-columns: [firstC-start] 1fr [firstC-end secondC-start] 1fr [secondC-end thirdC-start] 1fr [thirdC-end];
+    grid-template-rows: [firstR-start] 1fr [firstR-end secondR-start] 1fr [secondR-end thirdR-start] 1fr [thirdR-end]; */
+
+     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+
+
+}
+
+.items {
     text-align: center;
-    font-size: xx-large;
     
+    font-size: xx-large;
+    border-radius: 20px;
+
 }
-.itms_1{
+
+.itms_1 {
+    
     background-color: aqua;
-  /* grid-row-start:3 ;
-  grid-row-end:4 ;
-  grid-column-start: 2;
-  grid-column-end:3 ; */
+    /* grid-row-start: secondR-start;
+    grid-row-end: secondR-end;
 
-  /* grid-row: 3/4;
-  grid-column: 2/3; */
+    grid-column-start:secondC-start ;
+    grid-column-end:thirdC-start; */
 
-  grid-area: 3/2/5/4;
+    grid-row: 5/1;
+    grid-column: 3/4;
+}
+
+.itms_2 {
+    background-color: aquamarine;
 
 }
-.itms_2{ background-color: aquamarine;
 
+.itms_3 {
+    background-color: blueviolet;
 }
-.itms_3{
-background-color: blueviolet;
-}
-.itms_4{
+
+.itms_4 {
     background-color: brown;
 
 }
-.itms_5{
-background-color: cadetblue;
+
+.itms_5 {
+    background-color: cadetblue;
 }
-.itms_6{
-background-color: chartreuse;
+
+.itms_6 {
+    background-color: chartreuse;
 }
-.itms_7{
+
+.itms_7 {
     background-color: cornflowerblue;
 }
-.itms_8{
-background-color: darkblue;
+
+.itms_8 {
+    background-color: darkblue;
 }
-.itms_9{
+
+.itms_9 {
     background-color: yellowgreen;
 
 }

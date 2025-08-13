@@ -1,0 +1,8 @@
+nod js
+npm
+git bash
+
+
+vs code ke terminal me likhna hai npm wali command react app ko bnany k lye
+
+difference bet npm and npx

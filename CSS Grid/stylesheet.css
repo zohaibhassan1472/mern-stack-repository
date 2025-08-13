@@ -14,8 +14,8 @@ body {
     /* grid-template-columns: [firstC-start] 1fr [firstC-end secondC-start] 1fr [secondC-end thirdC-start] 1fr [thirdC-end];
     grid-template-rows: [firstR-start] 1fr [firstR-end secondR-start] 1fr [secondR-end thirdR-start] 1fr [thirdR-end]; */
 
-     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+     grid-template-columns: repeat(3, minmax(200px, 300px));
+    grid-template-rows: repeat(3, minmax(400px, min-content));
     gap: 10px;
 
 
@@ -38,7 +38,7 @@ body {
     grid-column-start:secondC-start ;
     grid-column-end:thirdC-start; */
 
-    grid-row: 5/1;
+    grid-row: 3/4;
     grid-column: 3/4;
 }
 

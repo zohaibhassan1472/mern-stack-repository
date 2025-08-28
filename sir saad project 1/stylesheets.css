@@ -29,6 +29,10 @@ header div div a img {
     background-color: rgb(47, 168, 0);
     border-radius: 20%;
 }
+#mobnum{
+    padding-right: 1rem;
+
+}
 
 .nav_items {
     margin: auto 6rem;
@@ -43,7 +47,7 @@ nav .list_items {
 }
 
 .items {
-    /* background-color: aquamarine; */
+    
     padding: 10px 2px;
     margin: 1rem;
     font-size: larger;
@@ -111,4 +115,130 @@ main .servicecart .card {
     background-color: white;
     
 }
+
+.ourprocess{
+display: grid;
+grid-template-columns: repeat(3, minmax(14rem, 1fr));
+background-color: rgb(87, 225, 87);
+gap: 1.5rem;
+justify-content: center;
+text-align: center;
+padding: 5rem;
+}
+ .ourprocess .cardes1{
+    grid-column: 1/-1;
+}
+.ourprocess .process{
+    background-color: white;
+    width: 100%;
+    height: 24rem;    
+    transition: width 2s, height 2s;
+}
+.ourprocess img{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.ourprocess .process div{
+    background-color: rgba(255, 255, 255, 0.549);
+    position: relative;
+    top: -60px;
+    z-index: 2;
+    text-align: justify;
+    padding: 1rem;
+}
+.ourprocess .process div h1{
+    margin-bottom: 2rem;
+}
+.ourprocess .process:hover{
+    background-color: rgb(143, 43, 43);
+    width: 90%;
+    height: 24rem;    
+}
+
+.ourbusiness {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 4rem;
+  
+  
+}
+
+.pro1 {
+  grid-column: 1 / -1; 
+  
+}
+.pro2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.pro2 > div{
+    margin: 2rem 2rem 2rem 0px;
+}
+.pro2 #learm_more{
+    margin-top: 1rem;
+    
+}
+.pro3 img{
+width: 30em;
+height: 20em;
+}
+
+@media (max-width: 768px) {
+  .ourbusiness {
+    grid-template-columns: 1fr;
+  }
+}
+
+.circle-btn {
+    
+  width: 30px;
+  height: 30px;
+  border: 2px solid #8BC34A; 
+  border-radius: 50%;         
+  background: transparent;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px 10px 10px 0px;
+  transition: background 0.3s ease;
+  
+}
+
+.circle-btn:hover {
+  background: #8BC34A; 
+  color: white;
+}
+
+.arrow {
+  color: #ffffff;     
+  font-size: 20px;   
+  line-height: 1;
+}
+
+.circle-btn:hover .arrow {
+  color: rgb(195, 27, 27);
+}
+.circle_detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro2, .pro3{
+    text-align: left;
+    margin: 3rem;
+}
+.pro2 button{
+    background-color: #8BC34A;
+    color: white;
+    border-color:transparent ;
+    font-size: large;
+    padding: 5px;
+}
+
+
 
